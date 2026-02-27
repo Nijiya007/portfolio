@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development us.">
+    <meta name="author" content="Devcrud">
+    <title>nijiya_portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/nijiya.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+  emailjs.init("XQZHCspMhmNceb5jT"); // paste your key here
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_l7wspvm", "template_9yy5fo2", this)
+      .then(() => {
+        alert("Message sent successfully! 🚀");
+        this.reset();
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Failed to send message. Try again!");
+      });
+  });
+</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">NIJIYA TU</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <!-- <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li> -->
+                <!-- <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li> -->
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <!-- <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li> -->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Nijiya</span>
+            </h1>
+            <p class="header-subtitle">FUll STACK WEB DEVELOPER</p>
+
+             <a href="#portfolio" download class="btn-rounded btn btn-primary ml-2">Visit My Works</a>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+               
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-6">About Me</h2>
+                    <p>
+                        Passionate and detalli-oriented Full Stack Web Developer with hands-on experience in building responsive web applications using modern technologies like Python, Django, React, Wordpress and MySQL.Skilled in both front-end and back-end development, with a strong focus on clean code,usability, and performance. Eager to contribute to collaborative projects and continuously grow as a developer.
+                    </p>
+                   <div class="mt-4">
+    <a href="assets/Nijiyacv.pdf" target="_blank" class="btn-rounded btn btn-outline-primary">View CV</a>
+    <a href="assets/Nijiyacv.pdf" download class="btn-rounded btn btn-primary ml-2">Download</a>
+</div>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+
+    <!-- portfolio section -->
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Did ?</p>
+        <h6 class="section-title mb-6">Portfolio</h6>
+
+        <!-- row -->
+        <div class="row">
+         <!-- wordpress -->
+            <div class="col-md-3">
+                <a href="https://aurainterior.infinityfreeapp.com" class="portfolio-card" target="_blank">
+                    <img class="portfolio-card-img" src="assets/imgs/folio4.png" alt="">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Interior Website</h4>
+                            <p class="font-weight-normal">Wordpress | Elementor </p>
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Work Track Web Application -->
+            <div class="col-md-3">
+                <a href="https://Nijiya.pythonanywhere.com" class="portfolio-card" target="_blank">
+                    <img src="assets/imgs/folio1.jpg" class="portfolio-card-img" alt="">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Work Track Management System</h4>
+                            <p class="font-weight-normal">Python | Django | MySQL</p>
+                            <p style="margin-top:5px; font-size:12px; opacity:0.9;">
+                                <strong>Demo Login:</strong><br>
+                                Username: <span style="color:#050505;">nijiya</span><br>
+                                Password: <span style="color:#000000;">nijz123</span>
+                            </p>
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- E-Commerce Website -->
+            <div class="col-md-3">
+                <a href="https://e-commerce-jade-gamma-77.vercel.app/" class="portfolio-card" target="_blank">
+                    <img class="portfolio-card-img" src="assets/imgs/folio2.jpg" alt="">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>E-Commerce Website</h4>
+                            <p class="font-weight-normal">React JS | HTML | CSS</p>
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Restaurant Website -->
+            <div class="col-md-3">
+                <a href="https://yummyresturantstatic.netlify.app" class="portfolio-card" target="_blank">
+                    <img class="portfolio-card-img" src="assets/imgs/folio3.jpg" alt="">
+                    <span class="portfolio-card-overlay">
+                        <span class="portfolio-card-caption">
+                            <h4>Restaurant Website</h4>
+                            <p class="font-weight-normal">HTML5 | CSS3</p>
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+</section>
+ <!-- end of portfolio section -->
+
+
+   <!-- service section -->
+<section class="section" id="service">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Do ?</p>
+        <h6 class="section-title mb-6">My Services</h6>
+
+        <!-- row -->
+        <div class="row">
+
+            <!-- Web Development -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/responsive.svg" class="icon" alt="">
+                        <h6 class="title">Web Development</h6>
+                        <p class="subtitle">Building full-stack dynamic websites using Python, Django,Wordpress, React & MySQL.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Designing -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/pencil-case.svg" class="icon" alt="">
+                        <h6 class="title">Web Designing</h6>
+                        <p class="subtitle">Crafting attractive, user-friendly, responsive UI for better user experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Applications -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/toolbox.svg" class="icon" alt="">
+                        <h6 class="title">Web Application</h6>
+                        <p class="subtitle">Developing secure and scalable applications with authentication & dashboards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Creator -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="assets/imgs/analytics.svg" class="icon" alt="">
+                        <h6 class="title">Content Creator</h6>
+                        <p class="subtitle">Creating engaging content and posters for clinics and brands.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end of row -->
+
+    </div>
+</section><!-- end of service section -->
+
+   
+
+    
+
+   <section class="section-sm bg-primary" aria-labelledby="work-with-me" id="contact">
+  <div class="container text-center text-sm-left">
+    <div class="row align-items-center">
+
+      <div class="col-sm offset-md-1 mb-4 mb-md-0">
+        <h6 id="work-with-me" class="title text-light">Want to work with me?</h6>
+        <p class="m-0 text-light">Always feel free to contact & hire me.</p>
+      </div>
+
+      <div class="col-sm offset-sm-2 offset-md-3">
+        <a href="https://wa.me/919645858187" target="_blank" rel="noopener"
+   class="btn btn-lg my-font btn-light rounded"
+   aria-label="Hire me on WhatsApp">
+   Hire Me
+</a>
+<a href="mailto:nijiya006@gmail.com" class="btn btn-lg my-font btn-light  rounded">
+     Email Me
+    </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   
+
+
+    
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer text-center" >
+    <p>© <script>document.write(new Date().getFullYear())</script> | Built by <strong>Nijiya</strong></p>
+</footer>
+       
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/nijiya.js"></script>
+
+</body>
+
+</html>
